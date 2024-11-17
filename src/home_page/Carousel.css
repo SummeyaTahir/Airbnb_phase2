@@ -1,0 +1,57 @@
+
+.icon-container {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+    margin-top: -0.2%;
+    width: 100%;
+   
+    gap: 0px; /* Remove any gap between icons */
+    justify-content: center;
+    background-color: white;/* Ensure the icons are spaced evenly within the container */
+}
+
+.icon-item {
+    flex: auto; /* No shrink or grow behavior */
+    width: 100px; /* Fixed width for icons */
+    text-align: center;
+    display: flex; /* Use flex to center items within */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.carousel-container {
+    position: fixed;
+    top: 80px;
+    width: 100vw; /* Ensure full width for the container */
+    display: flex;
+  
+    z-index:9000;
+}
+#prevButtonC {
+    left: 3%; /* Position previous button to the left */
+}
+
+#nextButtonC {
+    right: 3%; /* Position next button to the right */
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:hover {
+    border: 1px solid black;
+}
+
+button:focus {
+    outline: 2px solid black;
+} 
