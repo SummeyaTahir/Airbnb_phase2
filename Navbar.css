@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+<<<<<<< HEAD
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distributes space between logo and nav items */
+    align-items: center; /* Centers items vertically */
+    height: 12vh; /* Set height of navbar */
+    background: white; /* Background color */
+
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    z-index: 10000; /* Ensure it appears on top */
+    padding: 0 2rem; /* Add horizontal padding */
+    top: 0; /* Ensures the navbar is at the top */
+}
+
+#navigation1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align nav items vertically */
+    flex-wrap: wrap; /* Allows items to wrap */
+    font-size: 1.2rem; /* Font size for nav items */
+    justify-content: center; /* Centers the nav items */
+    flex-grow: 1; /* This allows the ul to take remaining space */
+}
+
+#right_nav_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align nav items vertically */
+    flex-wrap: wrap; /* Allows items to wrap */
+    font-size: 0.9rem; /* Font size for nav items */
+    justify-content: right; /* Centers the nav items */
+     /* This allows the ul to take remaining space */
+}
+.nav_li_right
+{
+    list-style-type: none; /* Removes bullet points */
+    margin: 0 0.1rem; /* Spacing between nav items */
+    color: black; /* Color for nav items */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 20px;
+    border: 2px solid white;
+    padding:5px 10px;
+}
+li{
+    list-style-type: none;
+}
+#login_button {
+    display: inline-block; /* Makes the anchor respect width and height */
+     border:0.1px solid grey;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-left: 0.9rem;
+    width: auto; /* Now this will work */
+    height: auto; /* Now this will work */
+    
+    /* Adjust text vertical alignment if needed */
+}
+#login_button:hover
+{
+    box-shadow: 0px 0px 8px 0.3px rgba(0, 0, 0, 0.5);
+    /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+}
+#Bar
+{
+    width:1rem;
+    height:1rem;
+    padding:5px 10px;
+}
+#user
+{
+    width:0.8rem;
+    height:1.2rem;
+    border:1px solid black;
+    padding:5px 10px;
+    border-radius: 100px;
+    color: white;  
+    background: black;
+}
+#globe
+{
+    width:1.3rem;
+    height:1.3rem;
+    padding:5px 10px;
+   
+}
+
+.nav_li_right a
+{
+    color: black; /* White color for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: 400;
+}
+.nav_li {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0 0.7rem; /* Spacing between nav items */
+    color: black; /* Color for nav items */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 20px;
+    border: 2px solid white;
+    padding:5px 10px;
+}
+
+.nav_li a {
+    color: grey; /* White color for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: 400;
+
+}
+
+#logoname {
+    display: flex; /* Flexbox for logo alignment */
+    align-items: center; /* Centers logo and text vertically */
+    color: black;/* Color for logo name */
+    font-size: 1.5rem; 
+    font-weight: 500;
+    cursor:pointer;
+}
+#logoname:hover #air_logo,
+#logoname:hover #name {
+    color: rgb(211, 22, 22);
+}
+#air_logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    
+}
+#name {
+    margin-left: 0.4rem; /* Space between icon and text */
+}
+
+.nav_li:hover,.nav_li_right:hover{
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: rgba(128, 128, 128,0.1);
+    width: auto;
+    height: auto;
+}
+
+
+.nav_li.active a{
+    background: transparent; /* Ensure active items have no background */
+   color: black;
+   font-weight: 600;
+  
+}
+.nav_li.active:hover {
+    border: 2px solid transparent;
+    background: transparent; /* or any background you prefer */
+    cursor: default; /* Change cursor to default */
+
+}
+=======
+  }
+  
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    padding: 0 2rem;
+    top: 0;
+  }
+  
+  #logoname {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  #logoname:hover #air_logo,
+  #logoname:hover #name {
+    color: rgb(211, 22, 22);
+  }
+  
+  #air_logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  #name {
+    margin-left: 0.4rem;
+  }
+  
+  #navigation1,
+  #right_nav_items {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  #navigation1 {
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  #right_nav_items {
+    justify-content: flex-end;
+  }
+  
+  .nav_li,
+  .nav_li_right {
+    margin: 0 0.7rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .nav_li a,
+  .nav_li_right a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .nav_li.active a {
+    color: black;
+    font-weight: 600;
+  }
+  
+  .nav_li:hover,
+  .nav_li_right:hover {
+    background: rgba(128, 128, 128, 0.1);
+  }
+  
+  #login_button {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid grey;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #Bar,
+  #user {
+    margin-right: 5px;
+  }
+  
+  #globe {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  
+  #user {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+  
+    #navigation1,
+    #right_nav_items {
+      flex-direction: column;
+      align-items: flex-start;
+      display: none; /* Initially hidden on mobile */
+      width: 100%;
+      background: white;
+      position: absolute;
+      top: 12vh;
+      left: 0;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+  
+    .nav_active {
+      display: flex !important;
+    }
+  
+    #right_nav_items {
+      margin-top: 1rem;
+      justify-content: flex-start;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #navigation1 li,
+    #right_nav_items li {
+      width: 100%;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    #logoname {
+      flex-grow: 1;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  
+>>>>>>> cc708ed (phase 2: make the backend ,connect to mongodb ,make fetching listings ,make fetch listing detail)
